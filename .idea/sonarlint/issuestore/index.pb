@@ -7,3 +7,13 @@ A
 sql/migration.sql,0/1/014ddf02b7af7edb5fc58cee76214a96f759b681
 D
 templates/index.html,f/6/f69b8ce2e31684ae06f1b3e84821e07e3dfddb2f
+6
+go.sum,5/a/5aa1ac64de2b0c4821af9393b44965020e4a521d
+8
+db/db.go,c/7/c702e2caea32bdc0af20b1b8245aa1a39b40c473
+B
+models/products.go,6/4/6439d736796707c9c6ed9e144338f0266bf964ee
+@
+routes/routes.go,b/c/bc98dd40925c3b0286d240246cc2f7e5ace91a15
+G
+controllers/products.go,3/8/3835c4545429c0a6315129953b72adb2c91e0bfe
