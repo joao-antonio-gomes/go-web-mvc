@@ -1,8 +1,8 @@
 package models
 
 import (
-	"fmt"
 	dbApp "github.com/joao-antonio-gomes/web-mvc/db"
+	"log"
 )
 
 type Product struct {
@@ -12,12 +12,15 @@ type Product struct {
 }
 
 func FindAllProducts() []Product {
+	log.Println("Buscando todos os produtos")
 	db := dbApp.ConnectPostgres()
 
-	productsDb, err := db.Query("SELECT * FROM products")
+	statement := "SELECT * FROM products"
+	log.Println("Executando query:", statement)
+	productsDb, err := db.Query(statement)
 
 	if err != nil {
-		fmt.Println(err.Error())
+		log.Panicln(err.Error())
 	}
 
 	var productSlice []Product
@@ -28,7 +31,7 @@ func FindAllProducts() []Product {
 
 		err = productsDb.Scan(&id, &name, &description, &price, &quantity)
 		if err != nil {
-			fmt.Println(err.Error())
+			log.Panicln(err.Error())
 		}
 
 		product := Product{Name: name, Description: description, Price: price, Quantity: quantity}
