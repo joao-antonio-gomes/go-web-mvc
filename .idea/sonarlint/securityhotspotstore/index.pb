@@ -17,3 +17,11 @@ B
 routes/routes.go,b/c/bc98dd40925c3b0286d240246cc2f7e5ace91a15
 G
 controllers/products.go,3/8/3835c4545429c0a6315129953b72adb2c91e0bfe
+B
+templates/new.html,0/e/0e15e64ee010674549e76311581eb86bcafdc13c
+D
+templates/_head.html,9/6/96c945a49790f0dbc66bf6ef5d0de62019c9a6f2
+D
+templates/_menu.html,4/8/48fb9e07c6bdd9b7d45325af1c685860fdbcad79
+C
+templates/edit.html,f/a/fa462efe7320cd0e706ed38738c1d50b191c6643
